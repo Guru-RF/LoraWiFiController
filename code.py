@@ -117,7 +117,7 @@ splash.append(text_steps)
 
 display.show(splash)
 
-knob = rotaryio.IncrementalEncoder(board.GP6, board.GP9)
+knob = rotaryio.IncrementalEncoder(board.GP6, board.GP7)
 
 while True:
 
