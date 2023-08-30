@@ -93,7 +93,7 @@ rtc.RTC().datetime = now
 print("Time is in sync!")
 
 # Lora Stuff
-RADIO_FREQ_MHZ = 868.775
+RADIO_FREQ_MHZ = 868.000
 CS = DigitalInOut(board.GP21)
 RESET = DigitalInOut(board.GP20)
 spi = busio.SPI(board.GP10, MOSI=board.GP11, MISO=board.GP8)
@@ -144,7 +144,6 @@ while True:
             lora = True
         else:
             lora = False
-        print('test')
         time.sleep(1)
 
     if lora is True:

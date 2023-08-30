@@ -2,19 +2,19 @@ hostname = "ctrlr0"
 
 TCPports = {
     0: {
-        'name': 'LopOnGnd',
+        'name': 'Loop NS',
         'httpReq': 'http://switch0.lan/port/1'
     },
     1: {
-        'name': 'MagLp NS',
+        'name': 'Loop EW',
         'httpReq': 'http://switch0.lan/port/2'
     },
     2: {
-        'name': 'MagLp EW',
+        'name': 'Loop',
         'httpReq': 'http://switch0.lan/port/3'
     },
     3: {
-        'name': 'MagLp PH',
+        'name': 'LOG',
         'httpReq': 'http://switch0.lan/port/4'
     },
     4: {
@@ -25,11 +25,19 @@ TCPports = {
 
 LORAports = {
     0: {
-        'name': 'TLopOnGnd',
+        'name': 'Loop NS',
         'LoRaReq': 'sw0/1'
     },
     1: {
-        'name': 'TMagLp NS',
-        'LoRaReq': 'sw0/1'
+        'name': 'Loop EW ',
+        'LoRaReq': 'sw0/2'
+    },
+    2: {
+        'name': 'Loop',
+        'LoRaReq': 'sw0/4'
+    },
+    3: {
+        'name': 'LOG',
+        'LoRaReq': 'sw0/3'
     },
 }
