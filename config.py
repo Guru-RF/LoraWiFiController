@@ -11,15 +11,11 @@ TCPports = {
     },
     2: {
         'name': 'Loop',
-        'httpReq': 'http://switch0.lan/port/3'
+        'httpReq': 'http://switch0.lan/port/4'
     },
     3: {
         'name': 'LOG',
-        'httpReq': 'http://switch0.lan/port/4'
-    },
-    4: {
-        'name': 'All',
-        'httpReq': 'http://switch0.lan/port/5'
+        'httpReq': 'http://switch0.lan/port/3'
     },
 }
 
